@@ -1,0 +1,30 @@
+<nav class="navbar fixed-top navbar-dark bg-dark" id="bar">
+      <form action="/busqueda" method="GET">
+        <div class="input-group" style="width: 95vw;">
+          <input class="form-control pr-sm-1 w-70" id="busqueda" name="busqueda" type="search" placeholder="Buscar un juego" required>
+
+          <button class="btn btn-primary mx-2 my-sm-0 w-10" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+</nav>
+
+<nav class="navbar fixed-bottom navbar-sm navbar-dark bg-dark form-inline">
+	<a href="/" class="navbar-brand"><i class="fas fa-gamepad"></i> Alpha 1.0
+	</a>
+	
+	<div class="btn-group">
+		<button class="btn btn-primary btn-lg mr-2" onclick="location.href = '/random'"><i class="fas fa-dice"></i> </button>
+		<button class="btn btn-primary btn-lg" onclick="location.href = '/replay'"><i class="fas fa-redo-alt"></i> </button>
+	</div>
+	
+
+
+	<button class="btn btn-secondary ml-4 w-auto hover" type="button" onclick="location.href ='/history'"><i class="fas fa-history"></i> <span class="hover"> Historial</span></button>
+	<button class="btn btn-danger ml-4 w-auto" type="button" onclick="location.href ='/logout'"> <i class="fa fa-sign-out" aria-hidden="true"></i> Salir </button>
+</nav>
+
+<style type="text/css"> 
+	body {
+      background-color: #B22222;
+    }
+</style>

@@ -1,0 +1,34 @@
+[
+	{
+		"nombre": "Keep Talking and Nobody Explodes",
+		"ejecutable": "C:\\Users\\vcano5\\Desktop\\ktane.exe",
+		"miniatura": "https://steamcdn-a.akamaihd.net/steam/apps/341800/header.jpg?t=1562181551",
+		"jugadores": [
+			"2", "3", "4"
+		],
+		"descripcion": "Te encuentras atrapado solo en una habitación con una bomba de tiempo. Tus amigos tienen el manual para desactivarlo, pero no pueden ver la bomba, así que tendrás que hablarlo rápido.",
+		"video_url": "https://steamcdn-a.akamaihd.net/steam/apps/256725407/movie480.webm?t=1546972080",
+		"costo": 10,
+		"idiomas": [
+			"Ingles"
+		],
+		"id": "1",
+		"controles": ["mouse"]
+	},
+	{
+		"nombre": "Overcooked",
+		"ejecutable": "C:\\Overcooked byTheMasterChief\\Overcooked.exe",
+		"miniatura": "https://cdn2.unrealengine.com/Diesel%2Fproduct%2Fovercooked%2Fhome%2FKitchen1-1920x1080-aeb19d379c9d394479acdbdbfc7ae0335bda83fe.jpg",
+		"jugadores": [
+			"2", "3", "4"
+		],
+		"descripcion": "Overcooked es un juego de cocina cooperativo, casual y caótico al que pueden jugar de uno a cuatro jugadores. Mediante el trabajo en equipo, tú y los demás chefs debéis preparar, cocinar y servir una serie de sabrosos pedidos antes de que la oleada de clientes se marche furiosa.",
+		"video_url": "https://steamcdn-a.akamaihd.net/steam/apps/256667046/movie480.webm?t=1468571743",
+		"costo": 10,
+		"idiomas": [
+			"Español"
+		],
+		"id": "2",
+		"controles": ["teclado", "ps3", "ps4", "xbonone", "xbox360"]	
+	}
+]

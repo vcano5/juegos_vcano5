@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<% include ../partials/head %>
+</head>
+<body> 
+  <br><br><br>
+<% include ../partials/header %>
+
+<div class="container jumbotron">
+  <h1> Juegos disponibles: <%=tamaño%></h1>
+  <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <% juegos.forEach(function(elemento) { %>
+            <% if(elemento.id == 2) { %>
+              <div class="carousel-item active">
+                <img src="<%=elemento.miniatura%>" style="filter:blur(1px); height: 60%"  class="d-block w-100" alt="Google Stadia">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark"><%=elemento.nombre%></h5>
+                  <div class="btn-group" role="group" aria-label="Opciones de Juego">
+                    <p><%=elemento.descripcion%></p>
+                    <div>
+                    <button type="button" class="btn btn-secondary mr-2" data-toggle="modal" data-target="#exampleModalLong">
+                      VER TRAILER
+                    </button>
+                    <a href="/jugar?juego=<%=elemento.nombre%>">
+                    <button type="button" class="btn btn-success ">JUGAR AHORA</button>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+           <% } else if(elemento.id != 2 ) { %>
+        <div class="carousel-item">
+            <img src="<%= elemento.miniatura %>" class="d-block w-100" alt="<%=elemento.nombre%>">
+            <div class="carousel-caption d-none d-md-block">
+              <h5><%= elemento.nombre %></h5>
+              <p><%= elemento.descripcion%></p>
+            </div>
+          </div>
+        <% } })%>
+        
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
