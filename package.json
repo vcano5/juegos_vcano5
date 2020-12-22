@@ -16,7 +16,7 @@
     "mysql": "^2.17.1",
     "net": "^1.0.2",
     "node-cmd": "^3.0.0",
-    "node-notifier": "^6.0.0"
+    "node-notifier": "^8.0.1"
   },
   "devDependencies": {
     "electron": "^6.0.10"
